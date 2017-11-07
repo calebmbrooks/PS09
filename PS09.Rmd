@@ -1,6 +1,6 @@
 ---
 title: "STAT/MATH 495: Problem Set 09"
-author: "WRITE YOUR NAME(S) HERE"
+author: "Caleb Brooks"
 date: "2017-11-07"
 output:
   html_document:
@@ -62,19 +62,23 @@ ggplot(NULL, aes(x=x1, y=x2, col=cluster)) +
 
 1. Run KMC 10 times on `observations_1` and comment on the consistency of the
 results.
+
+Results are consistently different. The difference could be visually described as the total set being bisected as different angles on each iteration
+
 1. Speculate on the root cause of any consistency or inconsistency in the
 results.
+
+The data are not actually clustered, or at least do not visually appear to be, and thus there is some randomness to the KMC results
+
 1. Run KMC 10 times on `observations_2` and comment on the consistentcy of the
 results.
+
+The results are the same each time
+
 1. Speculate on the root cause of any consistency or inconsistency in the
 results.
 
-**Answers**:
-
-1.
-1.
-1.
-1.
+The data are distinctly clustered, and so the results of KMC are always the same
 
 
 
