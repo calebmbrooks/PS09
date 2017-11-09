@@ -257,11 +257,11 @@ ggplot(NULL, aes(x=x1, y=x2, col=cluster)) +
 <ol style="list-style-type: decimal">
 <li>Run KMC 10 times on <code>observations_1</code> and comment on the consistency of the results.</li>
 </ol>
-<p>Results are consistently different. The difference could be visually described as the total set being bisected as different angles on each iteration</p>
+<p>Results are consistently different. The difference could be visually described as the total set being bisected as different angles on each iteration.</p>
 <ol style="list-style-type: decimal">
 <li>Speculate on the root cause of any consistency or inconsistency in the results.</li>
 </ol>
-<p>The data are not actually clustered, or at least do not visually appear to be, and thus there is some randomness to the KMC results</p>
+<p>The data are not actually clustered, or at least do not visually appear to be, and thus there is some randomness to the KMC results, which stems from the fact that in the initialization step of KMC the groupings are randomly assigned, and thus the center of each grouping tends toward a random spot in the uniformly-distributed data.</p>
 <ol style="list-style-type: decimal">
 <li>Run KMC 10 times on <code>observations_2</code> and comment on the consistentcy of the results.</li>
 </ol>
@@ -269,7 +269,7 @@ ggplot(NULL, aes(x=x1, y=x2, col=cluster)) +
 <ol style="list-style-type: decimal">
 <li>Speculate on the root cause of any consistency or inconsistency in the results.</li>
 </ol>
-<p>The data are distinctly clustered, and so the results of KMC are always the same</p>
+<p>The data are distinctly clustered, and so the results of KMC are always the same - the randomness of the initialization is negated by the lack of randomness in the clustering of the data.</p>
 </div>
 <div id="bonus-question-code-your-own" class="section level1">
 <h1>Bonus question: Code your own</h1>
